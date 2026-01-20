@@ -1,0 +1,29 @@
+<style>
+    .container {
+    display: grid;
+    gap:10px;
+    grid-template-columns: 70px 80px 90px;
+    background-color: aqua;
+    padding: 10px;
+    }
+    .container > div {
+        background-color: blue;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+    }
+    /* .item1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    } */
+     .item2{
+        grid-row-start: 1;
+        grid-row-end: 3;
+     }
+</style>
+<div class="container">
+    <div class="item2">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</div>

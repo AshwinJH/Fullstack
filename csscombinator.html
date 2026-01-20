@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        div p{
+            background-color: yellow;
+        }
+        div>p{
+            background-color: aqua;
+        }
+        div+p{
+            background-color: blue;
+        }
+        div~p{
+            background-color: gray;
+        }
+    </style>
+    <div>
+        <p>inside div1</p>
+        <p>inside div2</p>
+        <section>
+            <p>inside section1</p>
+            <p>inside section2</p>
+        </section>
+    </div>
+    <p>outside p1</p>
+    <p>outside p2</p>
+</html>

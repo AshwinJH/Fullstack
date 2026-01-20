@@ -1,0 +1,35 @@
+<style>
+    .box{
+        width:100px;
+        height:100px;
+        background-color: teal;
+        margin: 20px;
+        animation: moo 2s ease-in-out;
+    }
+    .none{
+        animation-fill-mode: none;
+    }
+    .forwards{
+        animation-fill-mode: forwards;
+    }
+    .backwards{
+        animation-fill-mode: backwards;
+    }
+    .both{
+        animation-fill-mode: both;
+    }
+    @keyframes moo {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+    }
+</style>
+<div class="box none">none</div>
+<div class="box forwards">forwards</div>
+<div class="box backwards">backwards</div>
+<div class="box both">both</div>

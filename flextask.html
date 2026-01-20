@@ -1,0 +1,51 @@
+
+   <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height:100px;
+        }
+        .header,
+        .footer
+        {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar{
+            background-color: white;
+            flex: 1 1 200px;
+            min-width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+         .content{
+            background:white ;
+            flex:3 1 300px;
+            min-width: 300px;
+            padding:20px;
+            text-align: center;
+        }  
+        .footer{
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <header class="header">Group Task Manager</header>
+            <div>
+                <aside class="sidebar">Assignment Group One
+                    <div><img src="image/images.jpeg" alt=""></div>
+                </aside>
+                <main class="content">Remaining Task</main>
+            </div>
+            <footer class="footer">Footer</footer>
+        </div>
+    </body>
+</html>

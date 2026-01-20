@@ -1,0 +1,49 @@
+<style>
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    .box{
+        width:50px;
+        height:50px;
+        background-color: violet;
+        animation: move 2s infinite alternate;
+    }
+    .linear{
+        animation-timing-function: linear;
+    }
+    .ease{
+        animation-timing-function: ease;
+    }
+    .ease-in{
+        animation-timing-function: ease-in;
+    }
+    .ease-out{
+        animation-timing-function: ease-out;
+    }
+    .ease-in-out{
+        animation-timing-function: ease-in-out;
+    }
+    .steps{
+        animation-timing-function:step-start;
+    }
+    .cubic{
+        animation-timing-function: cubic-bezier(0.4,0,0.5,1)
+    }
+    @keyframes move {
+        from {
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(100px);
+        }
+    }
+</style>
+<div class="container">
+    <div class="box linear">Linear</div>
+    <div class="box ease">Ease</div>
+    <div class="box ease-in">Ease-in</div>
+    <div class="box ease-out">Ease-out</div>
+    <div class="box ease-in-out">Ease-in-out</div>
+    <div class="box steps">steps</div>
+    </div>
